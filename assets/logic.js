@@ -29,7 +29,7 @@
 	    //user input
 	    var trainName = $("#train-name-input").val().trim();
 	    var trainDestination = $("#destination-input").val().trim();
-	    var firstTrain = moment($("#first-input").val().trim(), "HH:mm").format("X");
+	    var firstTrain = moment($("#first-input").val().trim(), "hh:mm").format("X");
 	    var trainFrequency = $("#frequency-input").val().trim();
 
 
@@ -75,15 +75,15 @@
 //Determine train times:
 // First Time (pushed back 1 year to make sure it comes before current time)
    
-	var firstTrainPretty = moment.unix(firstTrain).format("HH:mm");
+	var firstTrainPretty = moment.unix(firstTrain).format("hh:mm");
     console.log("FIRST TRAIN: " + firstTrainPretty);
 
     // Current Time
     var currentTime = moment();
-    console.log("CURRENT TIME: " + moment(currentTime).format("HH:mm"));
+    console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
 
     // Difference between the times
-    var diffTime = moment().diff(moment(firstTrainPretty), "minutes");
+    var diffTime = moment().diff(moment.unix(firstTrain), "minutes");
     console.log("DIFFERENCE IN TIME: " + diffTime);
 
     // Time apart (remainder)
@@ -95,12 +95,12 @@
     console.log("MINUTES TILL TRAIN: " + minutesLeft);
 
     // Next Train
-    var nextTrain = moment().add(minutesLeft, "minutes");
-    console.log("ARRIVAL TIME: " + moment(nextTrain).format("HH:mm"));
+    var nextTrain = moment().add(minutesLeft);
+    console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
 
 
     
-    var nextTrainPretty = moment.unix(nextTrain).format("HH:mm");
+    var nextTrainPretty = moment.unix(nextTrain).format("hh:mm");
  
 	    
 	    // Add each train's data into the table

@@ -1,0 +1,86 @@
+#lini{
+
+
+	background-image: url("./images/Benito-train-window.jpg");
+	display: cover;
+	background-repeat: no-repeat;
+	min-height: 400px;
+	max-width: 100%;
+	color:white;
+	padding-top: 0;
+	margin-top: 8px;
+	margin-left: 15px;
+	display: inline;
+	float:left;
+	border-width: 15px;
+	border-color: white;
+
+}
+.panel-title{
+
+	background-color: black;
+	color: white;
+	line-height: 36px;
+	padding:3px;
+	border-color: black;
+	font-size: 18px;
+
+
+}
+
+.panel{
+
+	border-color: black;
+	border-bottom-width: 18px;
+
+}
+
+.btn-primary{
+
+	background-color: grey;
+	border-color: tomato;
+	border-width: 3px;
+}
+
+.panel-primary>.panel-heading{
+
+	border-color: black;
+	background-color:grey;
+	border-width: 8px;
+
+
+
+}
+
+.panel-heading {max-height: 36px;}
+
+body {
+
+	background-color:tomato;
+}
+
+
+
+h2{
+
+	margin-left: 4px;
+	font-size: 40px;
+	-webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+    font-style: bold;
+}
+h1 {
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   font-size: 80px;
+   font-style: bold;
+   margin-top: 0;
+}
+
+#new{
+	margin-top: 8px;
+	float:left;
+	display:inline;
+	min-width: 43%;
+	margin-left: 56px;
+}

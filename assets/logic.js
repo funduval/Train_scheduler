@@ -102,7 +102,7 @@
     console.log("ARRIVAL TIME: " + moment(nextTrain).format("HH:mm"));
 
 
-    var firstTrainPretty = moment.unix(firstTrainConverted).format("HH:mm");
+    var firstTrainPretty = moment(firstTrainConverted).format("HH:mm");
     var nextTrainPretty = moment(nextTrain).format("HH:mm");
  
 	    
